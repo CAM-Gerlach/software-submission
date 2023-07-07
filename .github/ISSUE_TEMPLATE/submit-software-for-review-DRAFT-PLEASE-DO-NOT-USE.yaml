@@ -188,17 +188,16 @@ body:
       options:
         - Geospatial
         - Education
-  - type: checkboxes
+  - type: dropdown
     id: "partnerships"
     attributes:
       label: Community Partnerships
       description: |
         pyOpenSci [partners with communities](https://www.pyopensci.org/software-peer-review/partners/scientific-communities.html#pyopensci-software-peer-review-partnerships) that are maintaining lists of affiliated packages. You do not need to be a part of a community or to fall into a specific domain to apply for peer review. However, if you are a part of the community we will vet your tool against both our pyOpenSci standards and the community specific standards.
 
-        I would like to be affiliated with a community listed below. (check the box if you believe meet the community affiliation requirements):
+        Select a community below if you would like to be considered for affliation with it, have read the community's affiliation requirements and believe your package follows them ([link to Pangeo's](https://www.pyopensci.org/software-peer-review/partners/pangeo.html#pangeo-specific-software-peer-review-guidelines)):
       options:
-        - label: "I wish to be considered to be [Pangeo](https://www.pangeo.io) affiliated. I have [read the pangeo requirements](https://www.pyopensci.org/software-peer-review/partners/pangeo.html#pangeo-specific-software-peer-review-guidelines) and believe my package follows them."
-          required: false
+        - "Pangeo (see requirements linked above)"
   - type: textarea
     id: "target_audience"
     attributes:
