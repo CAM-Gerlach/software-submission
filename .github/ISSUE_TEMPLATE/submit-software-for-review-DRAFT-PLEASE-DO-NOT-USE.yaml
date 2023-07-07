@@ -294,14 +294,17 @@ body:
       placeholder: DOI here
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: "reviewer_options"
     attributes:
       label: Reviewer Options
-      description: "Are you OK with reviewers submitting issues and/or pull requests to your repo directly? This option will allow reviewers to open smaller issues that can then be linked to PR's rather than submitting a more dense text based review. It will also allow you to demonstrate addressing the issue via PR links."
+      description: "Are you OK with reviewers submitting issues and/or pull requests to your repo directly? Reviewers will then link to the issues in their submitted review. This option will allow reviewers to open smaller issues rather than submitting a more dense text based review. It will also allow you to demonstrate addressing the issue via PR links."
       options:
-        - label: Yes, I am OK with reviewers submitting requested changes as issues to my repo. Reviewers will then link to the issues in their submitted review.
-          required: false
+        - "Please select one"
+        - "Yes, I am OK with reviewers submitting requested changes as issues/PRs to my repo"
+        - "No, reviewers should limit their review comments to this issue"
+    validations:
+      required: true
   - type: checkboxes
     id: "survey"
     attributes:
