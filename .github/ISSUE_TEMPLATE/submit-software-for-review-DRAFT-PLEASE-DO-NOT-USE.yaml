@@ -160,41 +160,34 @@ body:
       placeholder: Easy-to-understand package description here.
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: "categories"
     attributes:
       label: Scope
       description: "Please select one or more categories. Check out our [package scope page](https://www.pyopensci.org/software-peer-review/about/package-scope.html) to learn more about our scope. (If you are unsure of which category you fit into, we suggest that you make a pre-submission inquiry):"
+      multiple: true
       options:
-        - label: Data retrieval
-          required: false
-        - label: Data extraction
-          required: false
-        - label: Data processing/munging
-          required: false
-        - label: Data deposition
-          required: false
-        - label: Data validation and testing
-          required: false
-        - label: Data visualization (please fill out a pre-submission inquiry before submitting a data visualization package)
-          required: false
-        - label: Workflow automation
-          required: false
-        - label: Citation management and bibliometrics
-          required: false
-        - label: Scientific software wrappers
-          required: false
-        - label: Database interoperability
-  - type: checkboxes
+        - Data retrieval
+        - Data extraction
+        - Data processing and munging
+        - Data deposition
+        - Data validation and testing
+        - Scientific software wrappers
+        - Workflow automation and versioning
+        - Citation management and bibliometrics
+        - Data visualization and analysis (please make a pre-submission inquiry first)
+        - Database software bindings
+    validations:
+      required: true
+  - type: dropdown
     id: "domain-categories"
     attributes:
       label: Domain-Specific Categories
       description: "Please indicate if your package fits into the categories below (this is optional - it is okay if it doesn't. We use this information to help our package users find packages with functionality that they need):"
+      multiple: true
       options:
-        - label: Geospatial
-          required: false
-        - label: Education
-          required: false
+        - Geospatial
+        - Education
   - type: checkboxes
     id: "partnerships"
     attributes:
