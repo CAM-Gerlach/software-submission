@@ -267,17 +267,18 @@ body:
         - label: has continuous integration setup to run tests, such as GitHub Actions, CircleCI, and/or others.
           required: false
   - type: dropdown
-    id: "publication_options"
+    id: "joss_submission"
     attributes:
-      label: Publication Options
-      description: "JOSS has a slightly more refined scope than that of pyOpenSci. If you want to submit your package to JOSS, please use the links below to determine whether your package is in JOSS' scope. Check each box that applies. NOTE: JOSS will make the final determination of whether the package is in scope for their ecosystem. These checks are here to help prepare you for their process and guidelines."
+      label: JOSS Submission
+      description: "JOSS has a slightly more refined scope than that of pyOpenSci. If you want to submit your package to JOSS, please read the [JOSS submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) to determine if the package is in JOSS' scope. NOTE: JOSS will make the final determination of whether the package is in scope for their ecosystem. These checks are here to help prepare you for their process and guidelines."
       options:
-        - I want to automatically submit to JOSS.
-        - I don't want to automatically submit to JOSS.
+        - Please select one
+        - I want to automatically submit to JOSS
+        - I don't want to automatically submit to JOSS
     validations:
       required: true
   - type: checkboxes
-    id: "publication_options2"
+    id: "joss_checks"
     attributes:
       label: JOSS Checks
       description: "If you want to automatically submit your package to JOSS, please confirm each of the following by checking the box:"
@@ -296,7 +297,7 @@ body:
     id: "package_doi"
     attributes:
       label: Package DOI
-      description: "Please write the package DOI. (At the end of our reviews we ask that you create a final tagged release associated with the review that is linked to a Zenodo archive (or some other archive of your choice). An editor will ask you to provide that link when the review is complete. The link will be added here.)"
+      description: "Enter the package DOI, if it has one. (At the end of our reviews we ask that you create a final tagged release associated with the review that is linked to a Zenodo archive (or some other archive of your choice). An editor will ask you to provide that link when the review is complete. The link will be added here.)"
       placeholder: DOI here
     validations:
       required: false
