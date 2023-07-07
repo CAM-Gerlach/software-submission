@@ -76,7 +76,7 @@ body:
       required: false
   - type: input
     id: "maintainer4_handle"
-    attributes: 
+    attributes:
       label: Maintainer 4 Handle
       description: GitHub handle for the fourth mantainer
       placeholder: GitHub handle here
@@ -137,7 +137,7 @@ body:
       description: Please provide a link to a tag/release or commit for the above version.
       placeholder: Version link here
     validations:
-      required: true   
+      required: true
   - type: checkboxes
     id: terms
     attributes:
@@ -150,13 +150,13 @@ body:
           required: true
         - label: "I expect to maintain this package for at least 2 years.  In case I need to step down as a maintainer, I'm open to support finding a replacement maintainer (team) if needed / if it makes sense for my package."
           required: true
-        - label: I have read the [pyOS peer review author guide](https://www.pyopensci.org/software-peer-review/how-to/author-guide.html). 
+        - label: I have read the [pyOS peer review author guide](https://www.pyopensci.org/software-peer-review/how-to/author-guide.html).
           required: true
   - type: textarea
     id: "description"
     attributes:
       label: Description
-      description: Please provide a brief and easy-to-understand paragraph describing what your package does. Please try to avoid jargon, or (if used) define jargon to make it clear to our cross-domain editorial team what your package does. 
+      description: Please provide a brief and easy-to-understand paragraph describing what your package does. Please try to avoid jargon, or (if used) define jargon to make it clear to our cross-domain editorial team what your package does.
       placeholder: Easy-to-understand package description here.
     validations:
       required: true
@@ -198,10 +198,10 @@ body:
   - type: checkboxes
     id: "partnerships"
     attributes:
-      label: Community Partnerships 
+      label: Community Partnerships
       description: |
         pyOpenSci [partners with communities](https://www.pyopensci.org/software-peer-review/partners/scientific-communities.html#pyopensci-software-peer-review-partnerships) that are maintaining lists of affiliated packages. You do not need to be a part of a community or to fall into a specific domain to apply for peer review. However, if you are a part of the community we will vet your tool against both our pyOpenSci standards and the community specific standards.
-        
+
         I would like to be affiliated with a community listed below. (check the box if you believe meet the community affiliation requirements):
       options:
         - label: "I wish to be considered to be [Pangeo](https://www.pangeo.io) affiliated. I have [read the pangeo requirements](https://www.pyopensci.org/software-peer-review/partners/pangeo.html#pangeo-specific-software-peer-review-guidelines) and believe my package follows them."
@@ -210,10 +210,10 @@ body:
     id: "target_audience"
     attributes:
       label: Target Audience
-      description: Please describe the target audience of this package. 
+      description: Please describe the target audience of this package.
       placeholder: Explain here
     validations:
-        required: true
+      required: true
   - type: textarea
     id: "applications"
     attributes:
@@ -221,7 +221,7 @@ body:
       description: Please describe the scientific applications of this package.
       placeholder: Explain here
     validations:
-        required: true
+      required: true
   - type: checkboxes
     id: "other_packages"
     attributes:
@@ -237,12 +237,12 @@ body:
       label: "If you answered yes in the previous question, please explain which packages and why."
       placeholder: Explain here
     validations:
-        required: false
+      required: false
   - type: textarea
     id: "pre-submission"
     attributes:
       label: Pre-Submission Link
-      description: If you made a pre-submission, please paste the link here. 
+      description: If you made a pre-submission, please paste the link here.
       placeholder: Link here
     validations:
         required: false
@@ -252,7 +252,7 @@ body:
       label: Package Technical Checks
       description: "For details about the pyOpenSci packaging requirements, see our [packaging guide](https://www.pyopensci.org/python-package-guide/). Confirm each of the following by checking the box. This package: "
       options:
-        - label: does not violate the Terms of Service of any service it interacts with. 
+        - label: does not violate the Terms of Service of any service it interacts with.
           required: false
         - label: "uses an [OSI approved license](https://opensource.org/licenses)."
           required: false
@@ -270,7 +270,7 @@ body:
     id: "publication_options"
     attributes:
       label: Publication Options
-      description: "JOSS has a slightly more refined scope than that of pyOpenSci. If you want to submit your package to JOSS, please use the links below to determine whether your package is in JOSS' scope. Check each box that applies. NOTE: JOSS will make the final determination of whether the package is in scope for their ecosystem. These checks are here to help prepare you for their process and guidelines." 
+      description: "JOSS has a slightly more refined scope than that of pyOpenSci. If you want to submit your package to JOSS, please use the links below to determine whether your package is in JOSS' scope. Check each box that applies. NOTE: JOSS will make the final determination of whether the package is in scope for their ecosystem. These checks are here to help prepare you for their process and guidelines."
       options:
         - I want to automatically submit to JOSS.
         - I don't want to automatically submit to JOSS.
@@ -280,23 +280,23 @@ body:
     id: "publication_options2"
     attributes:
       label: JOSS Checks
-      description: "If you want to automatically submit your package to JOSS, please confirm each of the following by checking the box:" 
+      description: "If you want to automatically submit your package to JOSS, please confirm each of the following by checking the box:"
       options:
         - label: "The package has an **obvious research application** according to JOSS's definition in their [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements). Be aware that completing the pyOpenSci review process **does not** guarantee acceptance to JOSS. Be sure to read the submission requirements linked above if you are interested in submitting to JOSS."
           required: false
         - label: |
-                 The package is not a 'minor utility' as defined by JOSS's [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements): 
+                 The package is not a 'minor utility' as defined by JOSS's [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements):
                  'Minor ‘utility’ packages, including ‘thin’ API clients, are not acceptable.' pyOpenSci welcomes these packages under 'Data Retrieval', but JOSS has slightly different criteria.
           required: false
         - label: "The package contains a `paper.md` matching [JOSS's requirements](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain) with a high-level description in the package root or in `inst/`."
           required: false
-        - label: "The package is deposited in a long-term repository with the DOI listed below."  
+        - label: "The package is deposited in a long-term repository with the DOI listed below."
           required: false
   - type: input
     id: "package_doi"
     attributes:
       label: Package DOI
-      description: "Please write the package DOI. (At the end of our reviews we ask that you create a final tagged release associated with the review that is linked to a zenodo archive (or some other archive of your choice). An editor will ask you to provide that link when the review is complete. The link will be added here.)" 
+      description: "Please write the package DOI. (At the end of our reviews we ask that you create a final tagged release associated with the review that is linked to a zenodo archive (or some other archive of your choice). An editor will ask you to provide that link when the review is complete. The link will be added here.)"
       placeholder: DOI here
     validations:
       required: false
@@ -323,5 +323,4 @@ body:
       description: "Have feedback/comments about our review process? Leave a comment below or on the [pyOpenSci Discourse](https://pyopensci.discourse.group/c/review-process/7)."
       placeholder: Comments here
     validations:
-        required: false
- 
+      required: false
