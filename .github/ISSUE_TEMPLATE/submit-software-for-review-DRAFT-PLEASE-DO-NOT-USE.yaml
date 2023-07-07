@@ -214,15 +214,16 @@ body:
       placeholder: Explain here
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: "other_packages"
     attributes:
       label: "Are there any other Python packages that accomplish the same thing?"
       options:
-        - label: "Yes"
-          required: false
-        - label: "No"
-          required: false
+        - "Please select one"
+        - "Yes"
+        - "No"
+    validations:
+      required: true
   - type: textarea
     id: "other_packages_explanation"
     attributes:
