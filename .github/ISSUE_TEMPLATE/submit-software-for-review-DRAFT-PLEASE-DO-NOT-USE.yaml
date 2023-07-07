@@ -161,7 +161,7 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: "category"
+    id: "categories"
     attributes:
       label: Scope
       description: "Please select one or more categories. Check out our [package scope page](https://www.pyopensci.org/software-peer-review/about/package-scope.html) to learn more about our scope. (If you are unsure of which category you fit into, we suggest that you make a pre-submission inquiry):"
@@ -186,9 +186,9 @@ body:
           required: false
         - label: Database interoperability
   - type: checkboxes
-    id: "categories"
+    id: "domain-categories"
     attributes:
-      label: Domain Specific Categories
+      label: Domain-Specific Categories
       description: "Please indicate if your package fits into the categories below (this is optional - it is okay if it doesn't. We use this information to help our package users find packages with functionality that they need):"
       options:
         - label: Geospatial
