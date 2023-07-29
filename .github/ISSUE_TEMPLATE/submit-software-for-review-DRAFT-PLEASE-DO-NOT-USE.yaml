@@ -19,93 +19,13 @@ body:
     validations:
       required: true
   - type: input
-    id: "maintainer1"
+    id: "maintainers"
     attributes:
-      label: Maintainer 1
-      description: First maintainer name
-      placeholder: Maintainer name here
+      label: Other Maintainers
+      description: List of maintainer names and GitHub handles
+      placeholder: "Name 1 @Handle1, Name 2 @Handle2, ..."
     validations:
       required: false
-  - type: input
-    id: "maintainer1_handle"
-    attributes:
-      label: Maintainer 1 Handle
-      description: GitHub handle for the first maintainer
-      placeholder: GitHub handle here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer2"
-    attributes:
-      label: Maintainer 2
-      description: Second maintainer name
-      placeholder: Maintainer name here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer2_handle"
-    attributes:
-      label: Maintainer 2 Handle
-      description: GitHub handle for the second maintainer
-      placeholder: GitHub handle here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer3"
-    attributes:
-      label: Maintainer 3
-      description: Third maintainer name
-      placeholder: Maintainer name here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer3_handle"
-    attributes:
-      label: Maintainer 3 Handle
-      description: GitHub handle for the third maintainer
-      placeholder: GitHub handle here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer4"
-    attributes:
-      label: Maintainer 4
-      description: Fourth maintainer name
-      placeholder: Maintainer name here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer4_handle"
-    attributes:
-      label: Maintainer 4 Handle
-      description: GitHub handle for the fourth maintainer
-      placeholder: GitHub handle here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer5"
-    attributes:
-      label: Maintainer 5
-      description: Fifth maintainer name
-      placeholder: Maintainer name here
-    validations:
-      required: false
-  - type: input
-    id: "maintainer5_handle"
-    attributes:
-      label: Maintainer 5 Handle
-      description: GitHub handle for the fifth maintainer
-      placeholder: GitHub handle here
-    validations:
-      required: false
-  - type: input
-    id: "package_name"
-    attributes:
-      label: Package Name
-      description: Package name
-      placeholder: Package name here
-    validations:
-      required: true
   - type: input
     id: "one_line_desc"
     attributes:
